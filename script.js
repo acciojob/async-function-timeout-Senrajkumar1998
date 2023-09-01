@@ -11,13 +11,12 @@ button.addEventListener("click",() => {
 	if(message && delay>0){
 		call(message,delay)
 	}
-});
-async function call(message,dealy){
+})
+ async function call(message,delay){
 	await new Promise((resolve)=>{
-		setTimeout(()=>{
+		setTimeout(() => {
 			resolve();
-		},delay);
+		},delay)
 	});
-	
-};
 output.innerText=message;
+}
